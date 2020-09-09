@@ -12,7 +12,16 @@ namespace Guessing_Game
             Console.WriteLine("Please enter your guess.");
 
             string guess = Console.ReadLine();
-            Console.WriteLine($"Your guess was {guess}.");
+            // Console.WriteLine($"Your guess was {guess}.");
+            string correct = "42";
+            if (guess == correct)
+            {
+                Console.WriteLine("Congrats! You guessed correctly.");
+            }
+            else
+            {
+                Console.WriteLine("You lose ):");
+            }
 
         }
     }
