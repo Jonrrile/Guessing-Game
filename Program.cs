@@ -6,21 +6,26 @@ namespace Guessing_Game
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Guessing Game.");
-            Console.WriteLine("------------------------------");
-            Console.WriteLine();
-            Console.WriteLine("Please enter your guess.");
+            int guessingCount = 0;
+            while (guessingCount < 4)
+            {
+                Console.WriteLine("Welcome to the Guessing Game.");
+                Console.WriteLine("------------------------------");
+                Console.WriteLine();
+                Console.WriteLine("Please enter your guess.");
 
-            string guess = Console.ReadLine();
-            // Console.WriteLine($"Your guess was {guess}.");
-            string correct = "42";
-            if (guess == correct)
-            {
-                Console.WriteLine("Congrats! You guessed correctly.");
-            }
-            else
-            {
-                Console.WriteLine("You lose ):");
+                string guess = Console.ReadLine();
+                // Console.WriteLine($"Your guess was {guess}.");
+                string correct = "42";
+                if (guess == correct)
+                {
+                    Console.WriteLine("Congrats! You guessed correctly.");
+                }
+                else
+                {
+                    Console.WriteLine("You lose ):");
+                }
+                guessingCount++;
             }
 
         }
