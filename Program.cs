@@ -6,8 +6,8 @@ namespace Guessing_Game
     {
         static void Main(string[] args)
         {
-            int guessingCount = 0;
-            while (guessingCount < 4)
+            int guessingCount = 1;
+            while (guessingCount < 5)
             {
                 Console.WriteLine("Welcome to the Guessing Game.");
                 Console.WriteLine("------------------------------");
@@ -20,10 +20,12 @@ namespace Guessing_Game
                 if (guess == correct)
                 {
                     Console.WriteLine("Congrats! You guessed correctly.");
+                    Console.WriteLine($"Your guess: {guessingCount}");
                 }
                 else
                 {
                     Console.WriteLine("You lose ):");
+                    Console.WriteLine($"Try again, your guess: {guessingCount}");
                 }
                 guessingCount++;
             }
